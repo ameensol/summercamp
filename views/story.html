@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Potomac Code Camp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap">
+
+    <!-- Le styles -->
+      <link href="less/style.min.css" rel="stylesheet"> 
+
+    <!--Import Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <!-- Le fav  -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+    if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+
+
+    <!--Has to be in head, to lazy load images.
+    Minimize in production. -->
+
+    <script src="js/lazyload.js"></script>
+    <script src="js/jRespond.js"></script>
+    <script src="js/spin.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Main js fail. -->
+    <script src="js/main.js"></script>
+
+  </head>
+
+  <body id="top" data-spy="scroll" data-target=".navbar">
+
+       <!-- Brand and Navigation -->
+      <header class="navbar navbar-fixed-top">
+        <div class="inner-page">
+          <h1 class="logo">Potomac Code Camp</h1>
+          <a class="btn-nav" data-toggle="collapse" data-target=".nav-collapse">
+            <i class="icon-reorder"></i>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav navigation" id="menu">
+              <li class="active"><a class="scroll brand-1" href="#home">Home</a></li>
+              <li><a class="scroll brand-1" href="#curriculum">Curriculum</a></li>
+              <li><a class="scroll brand-1" href="#about">About</a></li>
+              <li><a class="scroll brand-1" href="#program">Program Info</a></li>
+              <li><a class="scroll brand-1" href="#contact">Contact</a></li>
+            </ul>
+          </div> 
+        </div>
+      </header>
+      
+      <!-- Home Page -->
+      <div id="home" class="page color-1">
+        <div class="inner-page">
+          <h2 class="page-headline large">Don’t let your kids fall behind this summer, teach them how to code!</h2>
+        </div>
+        <div class="row-fluid inner-page">
+          <div class="span8 pull-right lazy-container">
+            <div class="btn-container">
+              <img id="video" class="lazy" alt="Looks great on every device" src="img/billGates.png" data-original="img/billGates.png"/>
+              <a class="lightbox iframe btn-play" target="#video" href="https://vimeo.com/68893018"><i class="icon-play"></i></a>
+            </div>
+          </div>
+          <div class="span4">
+            <ul class="big-list">
+              <br/>
+              <br/>
+              <li><i class="icon-cog"></i>Logic</li>
+              <li><i class="icon-eye-open"></i>Analytics</li>
+              <li><i class="icon-question-sign"></i>Creativity</li>
+              <li><i class="icon-star"></i>Self-Expression</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <!-- Sign Up -->
+      <div id="signup" class="page color-2 visible-desktop">
+        <div class="row-fluid inner-page">
+          <div class="span9">
+            <h4 class="pull-left">Enroll your child in Potomac Code Camp!  Session 1 is from July 8th to July 26th, and Session 2 is from Aug 5th to Aug 23rd.</h4>
+          </div>
+          <div class="span3">
+            <a href="#curriculum" class="scroll btn btn-centered pull-left"><i class="icon-caret-down"></i>Learn more</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Curriculum -->
+      <div id="curriculum" class="page color-4">
+        <div class="inner-page">
+          <h2 class="page-headline">Education</h2>
+        </div>
+
+      <div class="container marketing">
+        <!-- Featurettes-->
+        <div class="featurette">
+          <img class="featurette-image pull-right" src="img/scratch.jpg">
+          <h2 class="featurette-heading">Scratch</h2>
+          <p class="lead">With Scratch (a project of MIT Media Lab) our campers learn the fundamentals of programming and problem solving by snapping together colorful blocks of code to create interactive stories and games. </p>
+        </div>
+        <br/>
+        <hr class="featurette-divider">
+        <div class="featurette">
+          <img class="featurette-image pull-left" src="img/java.jpg">
+          <h2 class="featurette-heading">Java</h2>
+          <p class="lead">With Java our students learn the essentials of object oriented programming and and get a taste for the limitless possibilities of a full professional programming language.</p>
+        </div>
+        <br/>
+        <hr class="featurette-divider">
+        <div class="featurette">
+          <!--<img class="featurette-image pull-right" src="img/tinygroups.jpg">-->
+          <div class="rounded featurette-image pull-right"></div>
+          <h2 class="featurette-heading">Tiny Groups</h2>
+          <p class="lead">We’ve always loved taking small classes and know that they’re the best way to learn, so we guarantee that our camp will have 10-1 student-teacher ratio or better. Students will get the one-on-one help they need and progress at the best pace for them.</p>
+        </div>
+        <br/>
+        <hr class="featurette-divider">
+        <div class="featurette">
+          <img class="featurette-image pull-left" src="img/project.png">
+          <h2 class="featurette-heading">Project Centered</h2>
+          <p class="lead">The core of our curriculum is a sequence of 15 Scratch projects. For each project students have creative freedom to build whatever they think is fun while integrating new skills and concepts. Towards the end of the camp students build a capstone project like <a href="http://scratch.mit.edu/projects/1518/">Pong</a> or <a href="http://scratch.mit.edu/projects/162167/">Mario</a> and then follow a second series of Java projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About page -->
+    <div id="about" class="page color-3">
+      <div class="inner-page">
+        <h2 class="page-headline">Our Instructors: Who we are. Why we teach.</h2>
+      </div>
+      <hr>
+
+        <!-- Team -->
+      <div class="row-fluid inner-page">
+        <ul class="thumbnails">
+          <li class="span6 pull-left">
+            <div class="thumbnail">
+              <img src="img/amar.jpg"/>
+              <div class="caption">
+                <h3>Amar Mukunda</h3>
+                <p>Amar is a Junior at Amherst College majoring in Computer Science and Geology who has always loved teaching. For the past six summers he’s taught two and three week music courses to groups of thirty middle schoolers and while at Walt Whitman High School he was and English and Math Tutor for 8th and 9th graders.</p>
+              </div>
+            </div>
+          </li>
+          <li class="span6 pull-right">
+            <div class="thumbnail">
+              <img src="img/ameen.jpg"/>
+              <div class="caption">
+                <h3>Ameen Soleimani</h3>
+                <p>Ameen is a lifelong math and science tutor, a taekwondo instructor, and an open-source web developer. He  recently graduated from Rensselaer Polytechnic Institute with a degree in Chemical Engineering and before that he attended Thomas S. Wootton High School.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="span12">
+          <h4 id="whyweteach">We’ve been friends since high school and have been working on a startup together: its a bit like github, a bit like reddit, a bit like wikipedia, and a bit like quora...coming soon!  Our dream is to one day start a school. </h4>
+          <p class="text-center"><i class="icon-thumbs-up"></i> Like this website?  We developed it ourselves! <i class="icon-thumbs-up"></i></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Program Info -->
+    <div id="program" class="page color-1">
+      <div class="inner-page">
+        <h2 class="page-headline">Program Information</h2>
+        <div class="row-fluid">
+          <div class="span6">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Session</th>
+                  <th>Dates</th>
+                  <th>Hours</th>
+                  <th>Tuition</th>
+                </tr>
+              </thead>
+              <tbody>  
+                <tr>
+                  <td>1.1</td>
+                  <td>July 8th - July 26th</td>
+                  <td>9am - 12pm</td>
+                  <td>$900</td>
+                </tr>
+                <tr>
+                  <td>1.2</td>
+                  <td>July 8th - July 26th</td>
+                  <td>1pm - 4pm</td>
+                  <td>$900</td>
+                </tr>
+                <tr>
+                  <td>2.1</td>
+                  <td>Aug 5th - Aug 23th</td>
+                  <td>9am - 12pm</td>
+                  <td>$950</td>
+                </tr>
+                <tr>
+                  <td>2.2</td>
+                  <td>Aug 5th - Aug 23th</td>
+                  <td>1pm - 4pm</td>
+                  <td>$950</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="span6">
+            <dl>
+              <dt>Camp will be held at the Norwood School</dt>
+                <dd>8821 River Road - Bethesda, MD 20817<dd>
+              <br/>
+              <dt>Campers will be required to bring their own laptops</dt>
+              <br/>
+              <dt>Lunch will not be provided</dt>
+            </dl>
+        </div>
+        <div class="row-fluid">
+          <div class="span12">
+            <p><h3 class="text-center">Save 5% for each camper you refer! (up to 4 referrals)</h3></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Contact Us -->
+    <div id="contact" class="page color-2">
+      <div class="inner-page">
+        <h2 class="page-headline">Get in touch and stay updated</h2>
+      </div>
+      <div class="row-fluid inner-page contact">
+        <div class="span6">
+          <h3>What's on your mind?</h3>
+          <textarea rows="6" placeholder="Your story"></textarea>
+          <input type="text" placeholder="your@e-mail.com"><br />
+          <input type="text" placeholder="Name"><br />
+          <button class="btn btn-centered">Contact us</button>
+        </div>
+        <div class="span6">
+          <div class="btn-container centered lazy-container text-center">
+            <img src="img/pixel.png" class="lazy figurette" alt="Open the map"   data-original="img/map.png"/>
+            <a class="lightbox iframe  btn-map" target="blank" title="Open google maps" href="https://maps.google.com/maps?q=Stationsplein,+1012+Centrum,+Amsterdam,+Noord-Holland,+The+Netherlands&amp;hl=en"><i class="pull-left icon-map-marker"></i><div>Stationsplein, 1012 AB,<br />Amsterdam,<br /> The Netherlands</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter color-1">
+        <div class="inner-page row-fluid">
+          <div class="span4">
+            <h4><strong>Be cool</strong>, subscribe to get our latest news</h4>
+          </div>
+          <div class="span6">
+            <input type="email" placeholder="your@e-mail.com" name="EMAIL" class="subscribe">
+          </div>
+          <div class="span2">
+            <button type="submit"  class="btn pull-right subscribe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- The footer, social media icons, and copyright -->        
+      <footer class="page color-5">
+        <div class="inner-page row-fluid">
+          <div class="span6 social">
+            <a href="#contact"><i class="icon-twitter"></i></a>
+            <a href="#contact"><i class="icon-github-sign"></i></a>    
+            <a href="#contact"><i class="icon-facebook-sign"></i></a>
+            <a href="#contact"><i class="icon-google-plus-sign"></i></a>
+          </div>
+          <div class="span6 text-right copyright">
+            &copy; 2013 <a  href="http://prettystrap.com"  title="twitter bootstrap themes">prettystrap.com</a> | all rights reserved |  <a href="#top"   title="Got to top" class="scroll">To top <i class="icon-caret-up"></i></a>
+          </div>
+        </div>
+      </footer>
+
+  </body>
+</html>
