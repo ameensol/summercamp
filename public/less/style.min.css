@@ -1202,6 +1202,10 @@ border-radius: 20px;
   padding-top: 20px;
 }
 
+#home{
+  padding-bottom: 40px;
+}
+
 #home p{
   font-size: 24px;
 }
@@ -1235,6 +1239,15 @@ border-radius: 20px;
 
 #about{
   padding-top: 50px;
+}
+
+#program .row-fluid{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#program .row-fluid h3{
+  margin-top: 0;
 }
 
 #contact{

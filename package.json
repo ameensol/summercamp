@@ -1,6 +1,6 @@
 {
   "name": "summercamp",
-  "version": "0.0.6-3",
+  "version": "0.0.6-6",
   "private": true,
   "scripts": {
     "start": "node app.js"
