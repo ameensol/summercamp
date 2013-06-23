@@ -1167,6 +1167,10 @@ html{overflow-x:hidden;}
 
 /* Custom Styles */
 
+#top h1{
+  font-family: times;
+}
+
 #whyweteach{
   text-align: center;
   color: black;
@@ -1221,7 +1225,8 @@ border-radius: 20px;
 }
 
 #contact{
-  padding-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #contact p{
