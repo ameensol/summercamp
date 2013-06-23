@@ -1198,6 +1198,18 @@ border-radius: 20px;
   padding-top: 0;
 }
 
+#bottom_div{
+  padding-top: 20px;
+}
+
+#home p{
+  font-size: 24px;
+}
+
+#home .big-list{
+  font-size: 20px;
+}
+
 #signup{
   padding-top: 0;
 }
