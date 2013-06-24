@@ -1,5 +1,6 @@
 var hbs = require('hbs');
 var fs = require('fs');
+var nodemailer = require("nodemailer");
 
 /*
  * Module dependencies.
@@ -30,6 +31,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+
+app.post('/', routes.apply);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
