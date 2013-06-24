@@ -1263,7 +1263,11 @@ border-radius: 20px;
   height: 15px;
 }
 
-/* Table Styles */ 
+#location{
+  margin: 0;
+}
+
+/* Table Styles */
 
 table {
   max-width: 100%;
