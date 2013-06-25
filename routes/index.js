@@ -1,5 +1,5 @@
 var nodemailer = require("nodemailer");
-var gmailAuth = require('../config.js').gmailAuth
+var gmailAuth = require('../config.js').gmailAuth;
 
 // GET home page
 exports.index = function(req, res){
