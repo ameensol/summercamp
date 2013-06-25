@@ -289,39 +289,46 @@
         _gaq.push(['_trackPageview',location.pathname + location.search  + location.hash]);
       </script>
       <div class="row-fluid inner-page contact">
-        <h2 class="text-center">Interested? Apply Now!</h2>  
-        <!--<p class="text-center">Email <strong>potomaccodecamp@gmail.com</strong> or call at <strong>240-731-8786</strong></p>-->
-        <div class="span8 offset2">
-          <form method="POST">
-            <fieldset>
-              <legend>Camper Info</legend>
-              <input type="text" placeholder="First Name">
-              <input type="text" placeholder="Last Name">
-              <input type="text" placeholder="Age">
-              <input type="text" placeholder="Grade (Entering)">
-              <input type="text" placeholder="Allergies">
-              <legend>Address</legend>
-              <input type="text" placeholder="Street Address">
-              <input type="text" placeholder="City">
-              <input type="text" placeholder="State">
-              <legend>Parent Information</legend>
-              <input type="text" placeholder="First Name">
-              <input type="text" placeholder="Last Name">
-              <input type="text" placeholder="Relationship">
-              <input type="text" placeholder="Phone Number">
-              <input type="email" placeholder="Email Address">
-              <legend>Emergency Contact</legend>
-              <input type="text" placeholder="First Name">
-              <input type="text" placeholder="Last Name">
-              <input type="text" placeholder="Relationship">
-              <input type="text" placeholder="Phone Number">
-            </fieldset>
-                        
-            
-            <button type="submit" class="btn">Submit</button>
-          </form>
+        <h2 class="text-center">Interested? Apply Now!</h2>
+      </div>
+      <div class="container">
+        <form method="POST">
+          <fieldset>
+            <legend>Camper Info</legend>
+            <div class="controls controls-row">
+              <input type="text" placeholder="First Name" class="span5">
+              <input type="text" placeholder="Last Name" class="span5">
+            </div>
+            <div class="controls controls-row">
+              <input type="text" placeholder="Age" class="span1">
+              <input type="text" placeholder="Grade (Entering)" class="span2">
+              <input type="text" placeholder="Allergies" class="span7">
+            </div>
+
+            <legend>Address</legend>
+            <input type="text" placeholder="Street Address">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="State">
+            <legend>Parent Information</legend>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Relationship">
+            <input type="text" placeholder="Phone Number">
+            <input type="email" placeholder="Email Address">
+            <legend>Emergency Contact</legend>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Relationship">
+            <input type="text" placeholder="Phone Number">
+          </fieldset>
+          <button class="centered btn" type="submit">Submit</button>
+        </form>
 
         </div>
+      </div>
+      <div class="row-fluid">
+        <h3 class="text-center">Please contact us with any questions!</h3>
+        <p class="text-center">Email <strong>potomaccodecamp@gmail.com</strong> or call at <strong>240-731-8786</strong></p>
       </div>
     </div>
 
