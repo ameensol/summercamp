@@ -17,7 +17,7 @@ exports.apply = function(req, res){
 
   var mailOptions = {
     from: "potomaccodecamp@gmail.com",
-    to: "amukunda15@amherst.edu",
+    to: "ameen.sol@gmail.com",
     subject: "Test Email",
     text: "Did it work?",
     html: "<b>Hello World</b>"

@@ -1250,13 +1250,23 @@ border-radius: 20px;
   margin-top: 0;
 }
 
-#contact{
+#application{
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-#contact p{
+#application p{
   font-size: 20px;
+}
+
+#application label.checkbox{
+  line-height: 45px;
+  font-size: 17px;
+}
+
+#application .big-checkbox{
+  width: 20px; 
+  height: 20px
 }
 
 .spacer{
@@ -1267,6 +1277,11 @@ border-radius: 20px;
      float: none;
      margin-left: auto;
      margin-right: auto;
+}
+
+#inner {
+    width: 50%;
+    margin: 0 auto;
 }
 
 /* Table Styles */ 
