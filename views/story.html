@@ -293,60 +293,57 @@
         <h2 class="text-center">Interested? Apply Now!</h2>
       </div>
       <div class="container">
-        <form method="POST">
+        <form id="appForm" method="POST">
           <fieldset>
             <legend>Camper Info</legend>
             <div class="controls controls-row">
-              <input type="text" placeholder="First Name" class="span5">
-              <input type="text" placeholder="Last Name" class="span5">
+              <input type="text" placeholder="First Name" class="span5" id="camperFirstName" name="camperFirstName" required>
+              <input type="text" placeholder="Last Name" class="span5" id="camperLastName" name="camperLastName" required>
             </div>
             <div class="controls controls-row">
-              <input type="text" placeholder="Age" class="span1">
-              <input type="text" placeholder="M/F" class="span1">
-              <input type="text" placeholder="Grade (Entering)" class="span2">
-              <input type="text" placeholder="Allergies or Health Conditions" class="span6">
+              <input type="text" placeholder="Age" class="span1" id="camperAge" name="camperAge" required>
+              <input type="text" placeholder="M/F" class="span1" id="camperGender" name="camperGender" required>
+              <input type="text" placeholder="Grade (Entering)" class="span2" id="camperGrade" name="camperGrade" required>
+              <input type="text" placeholder="Allergies or Health Conditions" class="span6" id="camperAllergies" name="camperAllergies" required>
             </div>  
             <legend>Parent Information</legend>
             <div class="controls controls-row">
-              <input type="text" placeholder="First Name" class="span5">
-              <input type="text" placeholder="Last Name" class="span5">
+              <input type="text" placeholder="First Name" class="span5" id="parentFirstName" name="parentFirstName" required>
+              <input type="text" placeholder="Last Name" class="span5" id="parentLastName" name="parentLastName" required>
             </div>
             <div class="controls controls-row">
-              <input type="text" placeholder="Relationship" class="span3">
-              <input type="text" placeholder="Phone Number" class="span3">
-              <input type="email" placeholder="Email Address" class="span3">
+              <input type="text" placeholder="Relationship" class="span3" id="parentRelation" name="parentRelation" required>
+              <input type="text" placeholder="Phone Number" class="span3" id="parentPhone" name="parentPhone" required>
+              <input type="email" placeholder="Email Address" class="span3" id="parentEmail" name="parentEmail" required>
             </div>
             <legend>Address</legend>
             <div class="controls controls-row">
-              <input type="text" placeholder="Street Address" class="span5">
-              <input type="text" placeholder="City" class="span3">
-              <input type="text" placeholder="State" class="span2">
+              <input type="text" placeholder="Street Address" class="span5" id="address" name="address" required>
+              <input type="text" placeholder="City" class="span3" id="city" name="city" required>
+              <input type="text" placeholder="State" class="span2" id="state" name="state" required>
             </div>
             <legend>Emergency Contact</legend>
             <div class="controls controls-row">
-              <input type="text" placeholder="First Name" class="span5">
-              <input type="text" placeholder="Last Name" class="span5">
+              <input type="text" placeholder="First Name" class="span5" id="emergencyFirstName" name="emergencyFirstName" required>
+              <input type="text" placeholder="Last Name" class="span5" id="emergencyLastName" name="emergencyLastName" required>
             </div>
             <div class="controls controls-row">
-              <input type="text" placeholder="Relationship" class="span3">
-              <input type="text" placeholder="Phone Number" class="span3">
+              <input type="text" placeholder="Relationship" class="span3" id="emergencyRelation" name="emergencyRelation" required>
+              <input type="text" placeholder="Phone Number" class="span3" id="emergencyPhone" name="emergencyPhone" required>
             </div>
             <legend>Registration</legend>
             <div class="controls controls-row" id="inner">
               <label class="checkbox inline">
-                <input type="checkbox" id="session1" value="option1" class="big-checkbox">  Session 1  
+                <input type="checkbox" id="session1" value="session1" class="big-checkbox" name="session1">  Session 1  
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" id="session2" value="option2" class="big-checkbox">  Session 2  
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" id="session0" value="option3" class="big-checkbox">  Both Sessions  
+                <input type="checkbox" id="session2" value="session2" class="big-checkbox" name="session2">  Session 2  
               </label>
             </div>
             <legend>Referral or Promotion</legend>
             <div class="controls controls-row">
-              <input type="text" placeholder="Referral Source" class="span5">
-              <input type="text" placeholder="Promotion Code" class="span5">
+              <input type="text" placeholder="Referral Source" class="span5" id="referral" name="referral">
+              <input type="text" placeholder="Promotion Code" class="span5" id="promo" name="promo">
             </div>
           </fieldset>
           <div class="spacer"></div>
