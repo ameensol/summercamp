@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Potomac Code Camp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Computer Programming Summer Classes for 9-13 year olds in Potomac.">
+    <meta name="author" content="prettystrap">
+
+    <!-- Le styles -->
+    <link href="less/style.min.css" rel="stylesheet">
+
+    <!--Import Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <!-- Le fav  -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+    if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-41943050-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+
+    <!--Has to be in head, to lazy load images.
+    Minimize in production. -->
+
+    <script src="js/lazyload.js"></script>
+    <script src="js/jRespond.js"></script>
+    <script src="js/spin.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/placeholderPlugin.js"></script>
+    <script src="js/viewport.js"></script>
+
+    <!-- Main js fail. -->
+    <script src="js/main.js"></script>
+
+  </head>
+
+  <body id="top" data-spy="scroll" data-target=".navbar">
+
+       <!-- Brand and Navigation -->
+      <header class="navbar navbar-fixed-top">
+        <div class="inner-page">
+          <h1 class="logo">Potomac Code Camp</h1>
+          <a class="btn-nav" data-toggle="collapse" data-target=".nav-collapse">
+            <i class="icon-reorder"></i>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav navigation" id="menu">
+              <li class="active"><a class="scroll brand-1" href="#home">Home</a></li>
+              <li><a class="scroll brand-1" href="#curriculum">Curriculum</a></li>
+              <li><a class="scroll brand-1" href="#about">About</a></li>
+              <li><a class="scroll brand-1" href="#program">Program Info</a></li>
+              <li><a class="scroll brand-1" href="#application">Application</a></li>
+              <li><a class="scroll brand-1" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Home Page -->
+      <div id="home" class="page color-1 anchor">
+        <div class="inner-page">
+          <h2 class="page-headline large">Don’t let your kids fall behind. Teach them how to code!</h2>
+        </div>
+        <div class="row-fluid inner-page">
+          <div class="span6 pull-right lazy-container">
+            <div class="btn-container">
+
+              <img id="video" class="lazy" alt="Looks great on every device" src="img/billGates.png" data-original="img/billGates.png"/>
+              <a class="lightbox iframe btn-play" target="#video" href="https://vimeo.com/68936507" id="playText" onclick="_gaq.push(['_trackEvent','Videos', 'Play']);"><i class="icon-play"></i><br/>click to play</a>
+            </div>
+          </div>
+          <div class="span6">
+            <p id="believe">We believe...</p>
+            <ul class="big-list">
+              <li><i class="icon-eye-open"></i>Coding is self-expression</li>
+              <li><i class="icon-cog"></i>Coding is problem-solving</li>
+              <li><i class="icon-user"></i>Coding is for everyone</li>
+              <li><i class="icon-star"></i>Coding builds creative confidence</li>
+            </ul>
+          </div>
+        </div>
+        <div id="bottom_div" class="row-fluid">
+          <div class="span6 offset3">
+            <p class="text-center">"Coders build the internet. Coders bring robots to life. Coding young means feeling you can build anything you put your mind to."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sign Up -->
+      <div id="signup" class="page color-2">
+        <div class="row-fluid inner-page">
+          <div class="span12 text-center" id="emailCapture">
+            <h4 class="pull-left">Enroll your child in Potomac Code Camp starting June 15<sup>th</sup>! Our beginner course is for rising 5<sup>th</sup> to 8<sup>th</sup> graders and our advanced course is for early high school students or middle schoolers with strong backgrounds in programming.</h4>
+           <!--  <form id="emailForm">
+              <h4 class="text-center">Be the first to know about our camps! Join our email list!</h4>
+              <input placeholder="Email" type="email" id="newsletter" class="span5" name="newsletter" required>
+              <button class="btn">Go!</button>
+            </form> -->
+          </div>
+          <div class="span8 offset2" id="learnMore">
+            <a href="#curriculum" class="scroll btn btn-centered"><i class="icon-caret-down"></i> Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curriculum -->
+      <div id="curriculum" class="page color-4 anchor">
+        <div class="inner-page">
+          <h2 class="page-headline">Our Camp: What we teach. How we teach it.</h2>
+        </div>
+
+        <div class="inner-page" id="whatWeTeach">
+
+          <!-- Marketing -->
+          <div class="row howWeTeach">
+            <div class="span4">
+              <img class="img-rounded" src="img/tinygroups.jpg">
+              <h3>Tiny Classes</h3>
+              <p>Small classes are the best way to learn, so we guarantee that our camp will have a 7:1 student-teacher ratio. Students will get the one-on-one help they need to progress at their own pace.</p>
+            </div>
+            <div class="span4">
+              <img class="img-rounded" id="scratch" src="img/scratch.jpg">
+              <h3>Scratch</h3>
+              <p>Scratch is a powerful programming language developed at MIT Media Lab. With Scratch, students learn the fundamentals of programming and problem solving by snapping together colorful blocks of code.</p>
+            </div>
+            <div class="span4">
+              <img class="img-rounded" src="img/projectSmall.png">
+              <h3>Group Projects</h3>
+              <p>Project based learning gives students a sense of accomplishment at the end of each day. Students learn to break down large projects and work with their friends to build cool games and stories.</p>
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+          <!-- Featurettes-->
+          <div class="featurette">
+            <img class="featurette-image pull-right lazy img-rounded" src="img/supersmash.png">
+            <h2 class="featurette-heading">Beginner</h2>
+            <p class="lead">Our beginner class is an incredibly fun way for students to be creative and leaves campers excited about computer programming. During the course students master the fundamental aspects of programming: conditionals, loops, events, boolean, and variables. Students incorporate the new concepts they learn by building increasingly complex games, animations, and interactive stories such as <a href="http://scratch.mit.edu/projects/11542034/" target="_blank">Pacman</a> and <a href="http://scratch.mit.edu/projects/10128515/" target="_blank">Pong</a>. Towards the end of class students build a capstone project like <a href="http://scratch.mit.edu/projects/11450348/" target="_blank">Super Smash Brothers</a> or <a href="http://scratch.mit.edu/projects/1596521/" target="_blank">Tron</a>.</p>
+          <br/>
+          </div>
+          <!--<hr class="featurette-divider">-->
+          <div class="row-fluid">
+            <div class="span8 offset2">
+              <p class="text-center"><em>“I learned that there are many different ways to build anything and I learned how to choose the right way.”  ~Bhuvan Belur, advanced student (July 2013).</em></p>
+            </div>
+          </div>
+          <div class="featurette">
+            <img class="featurette-image pull-left lazy img-rounded" src="img/tictactoe.png" id="tictactoe">
+            <h2 class="featurette-heading" style="text-align:right">Advanced</h2>
+            <p class="lead">Our advanced class prepares students for the transition to professional programming languages by introducing them to higher-level programming concepts. Students learn about lists, iterative loops, subroutines, logic, and recursion while building sophisticated games like unbeatable <a href="http://scratch.mit.edu/projects/11493579/" target="_blank">Tic-Tac-Toe</a>. Considerable emphasis is placed on using programming best practices in order to create reusable and expandable code.</p>
+          </div>
+          <br/>
+        </div>
+      </div>
+    </div>
+
+    <!-- About page -->
+    <div id="about" class="page color-3 anchor">
+      <div class="inner-page">
+        <h2 class="page-headline">Our Team: Who we are. Why we teach.</h2>
+      </div>
+      <hr>
+
+        <!-- Team -->
+      <div class="row-fluid inner-page">
+        <ul class="thumbnails">
+          <li class="span6 pull-left">
+            <div class="thumbnail" id="amar_thumbnail">
+              <img src="img/AmarLarge.jpg"/>
+              <div class="caption">
+                <h3 class="text-center">Amar Mukunda</h3>
+                <p>Amar is a Junior at Amherst College majoring in Computer Science and Geology who has always loved teaching. For the past six summers he has taught two and three week music courses to groups of thirty middle schoolers and while at Walt Whitman High School he was an English and math tutor for 8th and 9th graders.</p>
+              </div>
+            </div>
+          </li>
+          <li class="span6 pull-right">
+            <div class="thumbnail" id="ameen_thumbnail">
+              <img src="img/AmeenLarge.jpg"/>
+              <div class="caption">
+                <h3 class="text-center">Ameen Soleimani</h3>
+                <p>Ameen is a freelance web developer based in Brooklyn. He graduated from Rensselaer Polytechnic Institute with a degree in Chemical Engineering and before that he attended Thomas S. Wootton High School. In his free time, he volunteers with ScriptEd to teach programming to underprivileged high school students.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="span12">
+          <h4 id="whyweteach">
+            We’ve been friends since high school and our dream is to one day start a school.
+            <br>
+            <a href="http://connection.media.clients.ellingtoncms.com/news/documents/2013/09/03/Potomac.pdf" target="_blank">
+              We are proud to have been featured in the Potomac Almanac!
+            </a>
+          </h4>
+          <p class="text-center"><i class="icon-thumbs-up"></i> Like this website? We developed it ourselves! <i class="icon-thumbs-up"></i></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Program Info -->
+    <div id="program" class="page color-2 anchor">
+      <div class="inner-page">
+        <h2 class="page-headline">Program Information</h2>
+        <!-- <div class="row-fluid">
+          <div class="span12">
+            <h4 id="tabletop" class="text-center">This summer, we've partnered with two reputable educational organizations to host our camp!</h4>
+          </div>
+        </div> -->
+        <div class="row-fluid" id="table">
+          <div class="span12">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Session</th>
+                  <th>Location</th>
+                  <th>Dates</th>
+                  <th>Hours (M-F)</th>
+                  <th>Tuition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CES.1</td>
+                  <td>Christ Episcopal School</td>
+                  <td>June 15-19, 22-26</td>
+                  <td>9:00AM - 12:00PM</td>
+                  <td>$450</td>
+                </tr>
+                <tr>
+                  <td>CES.2</td>
+                  <td>Christ Episcopal School</td>
+                  <td>July 20-24, 27-31</td>
+                  <td>1:00AM - 4:00PM</td>
+                  <td>$450</td>
+                </tr>
+                <!--
+                <tr>
+                  <td>CLC.1</td>
+                  <td>Cedar Lane Church</td>
+                  <td>July 28-Aug 1, Aug 4-8</td>
+                  <td>9:00AM - 12:00PM</td>
+                  <td>$450</td>
+                </tr>
+                <tr>
+                  <td>CLC.2</td>
+                  <td>Cedar Lane Church</td>
+                  <td>Aug 11-15, 18-22</td>
+                  <td>9:00AM - 12:00PM</td>
+                  <td>$450</td>
+                </tr>
+                -->
+                <tr>
+                  <td colspan="5" class="text-center">More to come!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span12">
+            <p><h3 class="text-center">FAQ</h3></p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span6">
+            <dl>
+              <dt>What time can I drop off and pick up my kids?</dt>
+                <dd>Drop off starts 30 minutes before camp starts and campers should be picked up no later than 30 minutes after camp ends.</dd>
+              <div class="spacer"></div>
+              <dt>How many students will be in my child's class?</dt>
+                <dd>There will be no more than 20 campers per session.</dd>
+              <div class="spacer"></div>
+              <dt>Will lunch be provided?</dt>
+                <dd>Lunch will not be provided, but we will have plenty of healthy snacks.</dd>
+              <div class="spacer"></div>
+              <dt>Will computers be provided or will my child need to bring their own laptop?</dt>
+                <dd>Students at Cedar Lane Church will be required to bring their own laptops, but Christ Episcopal School has provided us access to their computer lab. For those at Cedar Lane, loaner laptops are available for students who demonstrate need. We can also advise you on how to rent a laptop. Laptops can be either Mac or PC.</dd>
+              <div class="spacer"></div>
+              <dt>Are there scholarships available?</dt>
+                <dd>Definitely. Call and ask if you are interested in financial asistance or require a loaner laptop.</dd>
+            </dl>
+          </div>
+          <div class="span6">
+            <dl>
+              <dt>Who should enroll in Potomac Code Camp?</dt>
+                <dd>We accept children ages 10-16, but exceptions can be made. Our beginner session is for campers with no prior programming experience, and our advanced session is for campers who have completed our beginner session or have some experience with programming.</dd>
+              <div class="spacer"></div>
+              <dt>Does this class help students prepare for other programming courses such as a high school Python/Java/C++ class?</dt>
+                <dd>Absolutely! The beginner-level camp teaches conditionals, loops, events, and variables. The advanced class covers lists, iterative loops, code structure, logic, and recursion.  All are very important concepts in any object-oriented programming language.</dd>
+              <div class="spacer"></div>
+              <dt>Will campers who attended the beginner session be able to return for the advanced session?</dt>
+                <dd>Of course!  Our program was designed with progression in mind.  Campers who attend the beginner session will be well prepared to tackle the challenges of the advanced session.</dd>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us -->
+
+    <div id="application" class="page color-1 anchor">
+      <div class="row-fluid inner-page contact">
+        <h2 class="text-center">Interested? Apply Now!</h2>
+      </div>
+      <div class="row-fluid inner-page contact">
+        <ul class="thumbnails">
+          <li class="span6 offset3">
+            <div class="thumbnail" id="ces_thumbnail">
+              <img src="img/ces.jpg"/>
+              <div class="caption text-center">
+                <h3 class="text-center">Christ Episcopal School</h3>
+                <p>22 West Jefferson Street, Rockville, MD 20850</p>
+                <p>Session 1: June 16-27,&nbsp; 1:00PM - 4:00PM</p>
+                <p>Session 2: July 14-25,&nbsp; 9:00AM - 12:00PM</p>
+                <a href="http://cesrockville.org/cesummerreg" target="_blank"><button class="btn" id="cesButton">Register!</button></a>
+              </div>
+            </div>
+          </li>
+          <!--
+          <li class="span6 pull-right">
+            <div class="thumbnail" id="cedar_thumbnail">
+              <img src="img/cedarlane.jpg"/>
+              <div class="caption text-center">
+                <h3 class="text-center">Cedar Lane Church</h3>
+                <p>9601 Cedar Lane, Bethesda, MD 20814</p>
+                <p>Session 1: July 28-Aug 8,&nbsp; 9:00AM - 12:00PM</p>
+                <p>Session 2: Aug 11-22,&nbsp; 9:00AM - 12:00PM</p>
+                <a><button class="btn" id="clcButton">Register!</button></a>
+              </div>
+            </div>
+          </li>-->
+        </ul>
+      </div>
+      <div id ="appFormContainer" class="container">
+        <form id="appForm" method="POST">
+          <h3 class="text-center">Cedar Lane Application</h3>
+          <fieldset>
+            <legend>Camper Info</legend>
+            <div class="controls controls-row">
+              <input type="text" placeholder="First Name" class="span5" id="camperFirstName" name="camperFirstName" required>
+              <input type="text" placeholder="Last Name" class="span5" id="camperLastName" name="camperLastName" required>
+            </div>
+            <div class="controls controls-row">
+              <input type="text" placeholder="Age" class="span1" id="camperAge" name="camperAge" required>
+              <input type="text" placeholder="M/F" class="span1" id="camperGender" name="camperGender" required>
+              <input type="text" placeholder="Grade (Entering)" class="span2" id="camperGrade" name="camperGrade" required>
+              <input type="text" placeholder="Allergies or Health Conditions" class="span6" id="camperAllergies" name="camperAllergies">
+            </div>
+            <legend>Parent Information</legend>
+            <div class="controls controls-row">
+              <input type="text" placeholder="First Name" class="span5" id="parentFirstName" name="parentFirstName" required>
+              <input type="text" placeholder="Last Name" class="span5" id="parentLastName" name="parentLastName" required>
+            </div>
+            <div class="controls controls-row">
+              <input type="text" placeholder="Relationship" class="span3" id="parentRelation" name="parentRelation" required>
+              <input type="text" placeholder="Phone Number" class="span3" id="parentPhone" name="parentPhone" required>
+              <input type="email" placeholder="Email Address" class="span3" id="parentEmail" name="parentEmail" required>
+            </div>
+            <legend>Address</legend>
+            <div class="controls controls-row">
+              <input type="text" placeholder="Street Address" class="span5" id="address" name="address" required>
+              <input type="text" placeholder="City" class="span3" id="city" name="city" required>
+              <input type="text" placeholder="State" class="span2" id="state" name="state" required>
+            </div>
+            <legend>Emergency Contact</legend>
+            <div class="controls controls-row">
+              <input type="text" placeholder="First Name" class="span5" id="emergencyFirstName" name="emergencyFirstName" required>
+              <input type="text" placeholder="Last Name" class="span5" id="emergencyLastName" name="emergencyLastName" required>
+            </div>
+            <div class="controls controls-row">
+              <input type="text" placeholder="Relationship" class="span3" id="emergencyRelation" name="emergencyRelation" required>
+              <input type="text" placeholder="Phone Number" class="span3" id="emergencyPhone" name="emergencyPhone" required>
+            </div>
+            <legend>Summer 2015 Session</legend>
+            <div class="controls controls-row" id="inner">
+              <label class="radio inline">
+                <input type="radio" id="session1" value="ces1" class="big-checkbox" name="session">  CES.1
+              </label>
+              <label class="radio inline">
+                <input type="radio" id="session2" value="ces2" class="big-checkbox" name="session">  CES.2
+              </label>
+            </div>
+            <legend>How did you find out about us?</legend>
+            <div class="controls controls-row">
+              <input type="text" placeholder="Referral Source" class="span10" id="referral" name="referral">
+            </div>
+          </fieldset>
+          <div class="spacer"></div>
+          <button id="appSubmit" class="centered btn" type="submit">Submit Application</button>
+        </form>
+      </div>
+      <div class="row-fluid" id="contact">
+        <h3 class="text-center">Please feel free to contact us with any questions!</h3>
+        <p class="text-center">Email <strong>questions@potomaccodecamp.com</strong> or call at <strong>(919)475-7757</strong></p>
+        <br>
+        <p class="text-center">Interested in a partnership with Potomac Code Camp to teach your summer campers how to code? Contact us!</p>
+        <br/><br/>
+        <p class="text-center"><strong>Potomac Code Camp is hiring!</strong>
+        &nbsp;&nbsp;&nbsp;<button class="btn" id="hiring"><a href="/teach">Learn more</a></button></p>
+      </div>
+    </div>
+
+    <!-- Invoke placeholder plugin for IE 7-9 -->
+    <script>
+      $(function() {
+        $('input, textarea').placeholder();
+      });
+    </script>
+
+    <!-- The footer, social media icons, and copyright -->
+    <footer class="page color-5">
+      <div class="inner-page row-fluid">
+        <div class="span6 social">
+          <a href="https://github.com/ameen3/summercamp"><i class="icon-github-sign"></i></a>
+          <a href="https://www.facebook.com/potomaccodecamp"><i class="icon-facebook-sign"></i></a>
+        </div>
+        <div class="span6 text-right copyright">
+          &copy; 2014 <a href="#" title="twitter bootstrap themes">potomaccodecamp</a> | all rights reserved |  <a href="#top"   title="Got to top" class="scroll">To top <i class="icon-caret-up"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scroll to CLC registration -->
+    <script>
+      $('#clcButton').click(function (e) {
+        e.preventDefault;
+        e.stopPropagation;
+        $('#appFormContainer').fadeIn(400, function() {
+          $('html, body').animate({
+            scrollTop: $("#appFormContainer").offset().top - 20
+          }, 1000)
+        })
+      });
+    </script>
+
+    <script>
+      var currentLocation = null;
+      var currentHash = null;
+        $(window).scroll(function () {
+          var listNodes = $('#menu')[0].children;
+          var nodes = [];
+          var i, len = listNodes.length;
+          for (i = 0; i < len; i ++) {
+            var node = listNodes[i];
+            nodes.push(node);
+          }
+          nodes.forEach(function(el) {
+            if (el.className == "active") {
+              currentLocation = el;
+            }
+          });
+          var url = currentLocation.childNodes[0].href;
+          var hashIndex = url.indexOf("#");
+          var hash = url.substring(hashIndex);
+          if (hash != currentHash) {
+            console.log('hash change');
+            currentHash = hash;
+            _gaq.push(['_trackPageview',location.pathname + location.search  + hash]);
+          }
+        });
+    </script>
+
+    <script>
+      $(document).on('submit', '#emailForm', function(e) {
+        e.preventDefault();
+        $("#emailCapture").fadeOut(400, function(){
+          var email = $(this).find('input').val();
+          $(this).html("<h4 style='text-align:center; float:none;'>Thank you for joining our email list!</h4>").fadeIn();
+          $.ajax({
+              type: "POST",
+              url: "/email",
+              data: 'email=' + email
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

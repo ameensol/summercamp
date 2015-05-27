@@ -1,0 +1,10 @@
+{
+  "gmailAuth": {
+    "user": "potomaccodecamp@gmail.com",
+    "pass": "5paceBAR"
+  },
+  "sendgridAuth": {
+    "user": "potomaccodecamp",
+    "pass": "5paceBAR"
+  }
+}
