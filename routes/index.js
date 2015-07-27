@@ -8,6 +8,21 @@ nconf.load();
 
 var gmailAuth = nconf.get('gmailAuth');
 
+var SESSIONS = {
+  'cluuc1': {
+    name: 'first Cedar Lane Church',
+    date: 'August 3rd'
+  },
+  'cluuc2': {
+    name: 'second Cedar Lane Church',
+    date: 'August 17th'
+  },
+  'rruuc': {
+    name: 'River Road Congregation',
+    date: 'August 17th'
+  }
+}
+
 // GET home page
 exports.index = function(req, res){
   //res.render('story');
@@ -78,7 +93,7 @@ exports.apply = function(req, res){
     to: parentEmail,
     subject: "Thank you for applying to Potomac Code Camp!",
     text: "Dear " + parentFirstName + " " + parentLastName + ":\nThank you for submiting an application to Potomac Code Camp on behalf of " + camperFirstName + " " + camperLastName +
-          ". "+camperFirstName + " has been confirmed for our "+session+" session and we look forward to coding together!\nPlease feel free to email us if you have any questions at all.\n\nSincerely,\nPotomac Code Camp"
+          ". "+camperFirstName + " has been confirmed for our "+SESSIONS[session].name+" session starting on "+SESSIONS[session].date+" and we look forward to coding together!\nPlease feel free to email us if you have any questions at all.\n\nSincerely,\nPotomac Code Camp"
   };
 
   var mailOptionsApplication = {
