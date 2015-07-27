@@ -78,8 +78,7 @@ exports.apply = function(req, res){
     to: parentEmail,
     subject: "Thank you for applying to Potomac Code Camp!",
     text: "Dear " + parentFirstName + " " + parentLastName + ":\nThank you for submiting an application to Potomac Code Camp on behalf of " + camperFirstName + " " + camperLastName +
-          ". We will process your application as fast as possible and let you know in the next few days if " + camperFirstName + " has been accepted.\n" +
-          "Please feel free to email us if you have any questions.\n\nSincerely,\nPotomac Code Camp"
+          ". "+camperFirstName + " has been confirmed for our "+session+" session! We look forward to coding together, and please feel free to email us if you have any questions at all.\n\nSincerely,\nPotomac Code Camp"
   };
 
   var mailOptionsApplication = {
